@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>God of Poverty</title>
+  
+  <style>
+    @font-face {
+      font-family: Gaegu;
+      src: url('Gaegu-Regular.ttf')
+    }
+    
+    body {
+      margin				: 0;
+      overflow			: hidden;
+      background-color	: white;
+    }
+  </style>
+  
+  <script src="./js/lib/phaser.js"></script>
+  <script src="./js/lib/clicker.js"></script>
+  
+  <script src="./js/data/data.js"></script>
+  
+  <!-- MODULES -->
+  <script src='./js/scenes/sceneLoad.js'></script>
+  <script src='./js/scenes/sceneMain.js'></script>
+  
+  <script src='./js/classes/people.js'></script>
+  <script src='./js/classes/graphic_bar.js'></script>
+
+  <!-- UTILITY -->
+  <script src='./js/utils/alignGrid.js'></script>
+  <script src='./js/utils/helper.js'></script>
+  
+  <script src="./js/main.js"></script>
+</head>
+<body>
+  <div style="font-family: Gaegu; position:absolute; left:-1000px; visibility:hidden;">.</div>
+  <div id='phaser-game'></div>
+</body>
+</html>
