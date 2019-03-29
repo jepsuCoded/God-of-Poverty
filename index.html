@@ -1,43 +1,46 @@
-<!DOCTYPE html>
+0<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>God of Poverty</title>
-  
-  <style>
-    @font-face {
-      font-family: Gaegu;
-      src: url('Gaegu-Regular.ttf')
-    }
-    
-    body {
-      margin				: 0;
-      overflow			: hidden;
-      background-color	: white;
-    }
-  </style>
-  
-  <script src="./js/lib/phaser.js"></script>
-  <script src="./js/lib/clicker.js"></script>
-  
-  <script src="./js/data/data.js"></script>
-  
-  <!-- MODULES -->
-  <script src='./js/scenes/sceneLoad.js'></script>
-  <script src='./js/scenes/sceneMain.js'></script>
-  
-  <script src='./js/classes/people.js'></script>
-  <script src='./js/classes/graphic_bar.js'></script>
+  <head>
+    <meta charset="UTF-8">    <meta name="viewport" content="user-scalable=0, initial-scale=1,minimum-scale=1,  maximum-scale=1,  width=device-width, minimal-ui=1">
 
-  <!-- UTILITY -->
-  <script src='./js/utils/alignGrid.js'></script>
-  <script src='./js/utils/helper.js'></script>
-  
-  <script src="./js/main.js"></script>
-</head>
-<body>
-  <div style="font-family: Gaegu; position:absolute; left:-1000px; visibility:hidden;">.</div>
-  <div id='phaser-game'></div>
-</body>
+    <title>God of Poverty</title>
+    <link href="https://fonts.googleapis.com/css?family=Gaegu" rel="stylesheet">
+<style>
+    * {font-size: 8px !important;font-family: 'Gaegu', cursive}
+    body {
+      margin        : 0;
+      overflow      : hidden;
+      background-color  : #1e1d2c;
+    }
+
+    canvas {
+      border-left: 2px #5a5a63 solid;
+      border-right: 2px #5a5a63 solid;
+    }
+</style>
+
+    <script src="./js/lib/phaser.js"></script>
+    <script src="./js/lib/clicker.js"> </script>
+    <script src="./js/lib/nineslice.min.js"> </script>
+
+    <script src="./js/data/data.js"></script>
+
+    <!-- MODULES -->
+    <script src='./js/scenes/sceneLoad.js'></script>
+    <script src='./js/scenes/sceneMain.js'></script>
+
+    <script src='./js/classes/people.js'></script>
+    <script src='./js/classes/graphic_bar.js'></script>
+    <script src='./js/classes/button.js'></script>
+
+    <!-- UTILITY -->
+    <script src='./js/utils/alignGrid.js'></script>
+    <script src='./js/utils/helper.js'></script>
+
+    <script src="./js/main.js"></script>
+  </head>
+  <body>
+    <div style="font-family: 'Gaegu', cursive; position:absolute; left:-1000px; visibility:hidden;">-</div>
+    <div id='phaser-game'></div>
+  </body>
 </html>
