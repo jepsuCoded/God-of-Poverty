@@ -1,5 +1,9 @@
 var game, _scene;
 var _data = {
+  bonus: 1,
+  tutorial: false,
+  earned: -1,
+  count: 1,
   cash: { soul: 0, peso: 0 },
   tapper: { count: 0.1 },
   people: [],
@@ -29,8 +33,8 @@ window.onload = function() {
   
   var config = {
     type: Phaser.AUTO,
-    width: w,
-    height: h,
+    width: 640,
+    height: 1280,
     parent: 'phaser-game',
     pixelArt: true,
     antialias: false,
@@ -46,17 +50,14 @@ window.onload = function() {
       global: [NineSlice.Plugin.DefaultCfg],
     },
     roundPixel: true,
-    physics: {
-      default: 'arcade',
-        arcade: {
-          debug: 'true'
-        }
+    audio: {
+      //disableWebAudio: true
     },
     /*
     input: {
-      activePointers: 4
-    },
-    */
+      activePointers: 4,
+    },*/
+    
     backgroundColor: 0x3e3d4c,
     scene: [SceneLoad, SceneMain]
   };

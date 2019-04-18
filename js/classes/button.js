@@ -5,11 +5,14 @@ class Button extends Phaser.GameObjects.Image {
     this.setScale(config.scale || 1, config.scale || 1);
     this.setFlipX(config.flipX || false);
     this.setDepth(config.depth || 1);
+    //this.setActive(config.show!==undefined?config.show:true);
+    this.setVisible(config.show!==undefined?config.show:true);
     this.isPushed = false;
     this.isLocked = false;
     this.setInteractive({useHandCursor: true})
       .on('pointerdown', function() {
         if (this.isLocked) return;
+        _scene.sfx_button_icon.play();
         this.setTint(scene.color.info[1]);
         this.y += 1;
         this.isPushed = true;
@@ -32,8 +35,13 @@ class Button extends Phaser.GameObjects.Image {
     scene.add.existing(this);
   }
   
-  locked(scene) {
+  locked(scene, color = _scene.color.secondary[1]) {
     this.isLocked = true;
-    this.setTint(scene.color.secondary[1]);
+    this.setTint(color);
+  }
+  
+  unlocked() {
+    this.isLocked = false;
+    this.clearTint();
   }
 }

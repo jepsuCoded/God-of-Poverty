@@ -1,0 +1,37 @@
+Font
+
+Alborz Typeface by: Ten By Twenty
+License: font are licensed under the SIL Open Font Licence for use in both commercial and non-commercial projects.
+
+---
+Audios
+
+License: CC-BY
+Music: Chibi Ninja by Eric Skiff - http://ericskiff.com/music/
+
+License: CC0
+Sound Effects: by Juhani Junkala - https://www.youtube.com/watch?v=dbACpSy9FWY
+
+---
+Libraries
+
+clicker.js
+License: MIT
+Continuum Engine: by Carribus - https://github.com/carribus/continuum-engine
+
+phaser3.js
+License: MIT
+Phaser 3 Game Engine: by photonstorm - http://phaser.io/
+
+nineslice.js
+License: MIT
+Phaser 3 Nineslice Plugin: by jdotrjs - https://github.com/jdotrjs/phaser3-nineslice
+
+localforage.js
+License: Apache License, Version 2.0 - http://www.apache.org/licenses/LICENSE-2.0
+LocalForage: https://localforage.github.io/localForage/
+
+---
+Image Assets
+
+All artworks/images was done by me so... should I credit myself? *pats my back* no.
